@@ -112,4 +112,32 @@ function clickAC() {
  printBox()
 }
 
+function clickDEL() {
+ contBox = contBox.slice(0, -1)
+ printBox()
+}
 
+function clickpunto() {
+ contBox = contBox + "."
+ printBox()
+}
+
+function clickmas() {
+ contBox = contBox + "+"
+ printBox()
+}
+
+function clickmenos() {
+ contBox = contBox + "-"
+ printBox()
+}
+
+function clickx() {
+ contBox = contBox + "×"
+ printBox()
+}
+
+function clickdiv() {
+ contBox = contBox + "÷"
+ printBox()
+}
