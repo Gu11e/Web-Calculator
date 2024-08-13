@@ -12,6 +12,7 @@ button {
    border-radius: 15px;
    font-weight: bold;
    font-size: 15px;
+   border: solid;
 }
 
 #numberBox {
@@ -20,27 +21,35 @@ button {
    height: 40px;
    width: 220px;
    margin: 0 auto;
+   font-size: 20px;
    font-weight: bold;
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: DarkSeaGreen;
 }
 
 h1 {
  color: black;
+ background-color: lightyellow;
+ border-radius: 15px;
 }
 
 body {
  background-color: LightSlateGray;
 }
 
-div {
+.calculadora {
   border: solid 5px;
   width: 260px;
   padding: 15px 0 15px 0;
   border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: darkslategray;
+}
+
+.web {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
