@@ -2,8 +2,8 @@
 <html>
   <head>
 <script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
  <style>
    body{
      text-align: center;
@@ -11,12 +11,13 @@
  </style>
   </head>
   <body>
-<h1>Calculadora</h1> <br>
- <div>
- <p id="numberBox">0</p><br>
-
-<button onclick="clickAC()">AC</button>
-<button onclick="clickDEL()">DEL</button> <button>%</button>
+ <div class="web">
+ <h1>Calculadora</h1> <br>
+  <div class="calculadora">
+  <p id="numberBox">0</p>
+  <br>
+ <button  onclick="clickAC()">AC</button>
+<button onclick="clickDEL()">DEL</button> <button onclick="clickPorcentaje()">%</button>
 <button onclick="clickdiv()">÷</button><br>
 <button onclick="click7()">7</button> 
 <button onclick="click8()">8</button>
@@ -32,8 +33,8 @@
 <button onclick="clickmas()">+</button><br>
 <button class="largo" onclick="click0()">0</button>
 <button onclick="clickpunto()">.</button>
-<button>=</button> <br>
+<button onclick="clickIgual()">=</button> <br>
   </div>
-    
+ </div>   
   </body>
 </html>
