@@ -1,4 +1,5 @@
 let contBox = "0"
+let operador = 1
 
 function printBox() {
  document.getElementById(
@@ -139,5 +140,24 @@ function clickx() {
 
 function clickdiv() {
  contBox = contBox + "÷"
+ printBox()
+}
+
+function fixOperation() {
+ operador = contBox.replace(
+  /×/g, '*').replace(/÷/g,
+  '/');
+}
+
+function clickIgual() {
+ fixOperation()
+ operador = eval(operador)
+ contBox = operador
+ printBox()
+}
+
+function clickPorcentaje() {
+ operador = eval(contBox)
+ contBox = operador / 100
  printBox()
 }
